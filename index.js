@@ -20,9 +20,5 @@ HTTP_SERVER.listen(port, 'localhost', () => {
   console.log('SERVER STARTED IN THE PORT', port);
 });
 
-HTTP_SERVER.get('/', function (resquest, response) {
-  response.send("Testing");
-})
-
 // INJECTING API SERVER
 HTTP_SERVER.use('/', require('./app'));
