@@ -20,7 +20,7 @@ HTTP_SERVER.listen(port, 'localhost', () => {
   console.log('SERVER STARTED IN THE PORT', port);
 });
 
-HTTP_SERVER.get('/', function (resquest, response) {
+HTTP_SERVER.get('/test', function (resquest, response) {
   response.send("Testing");
 })
 
