@@ -21,9 +21,9 @@ HTTP_SERVER.listen(port, '0.0.0.0', (err) => {
   console.log(`SERVER STARTED IN THE PORT ${port}`);
 });
 
-HTTP_SERVER.get('/', function (resquest, response) {
-  response.send("Testing");
-})
+// HTTP_SERVER.get('/', function (resquest, response) {
+  // response.send("Testing");
+// })
 
 // INJECTING API SERVER
 HTTP_SERVER.use('/', require('./app'));
