@@ -26,4 +26,4 @@ HTTP_SERVER.listen(port, '0.0.0.0', (err) => {
  })
 
 // INJECTING API SERVER
-HTTP_SERVER.use('/', require('./app'));
+HTTP_SERVER.use('/v1', require('./app'));
