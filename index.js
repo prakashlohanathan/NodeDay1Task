@@ -14,7 +14,7 @@ HTTP_SERVER.use(bodyParser.json());
 HTTP_SERVER.use(bodyParser.urlencoded({ extended: false }));
 
 // BASIC SERVER CONFIGS
-const port = 5000;
+const port = 4000;
 
 HTTP_SERVER.listen(port, '0.0.0.0', (err) => {
   if (err) throw err;
